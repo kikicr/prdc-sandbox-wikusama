@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportExample" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ad0f72b-0e89-4783-b746-e78266308908">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="93b2af59-f73e-40a4-bb65-051467efa796"/>
+	<field name="field1" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="username" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="0cde22d9-3127-461b-9ada-b2fbb0169f6e" x="141" y="10" width="270" height="69"/>
+				<textElement>
+					<font fontName="Century Gothic" size="24"/>
+				</textElement>
+				<text><![CDATA[Data Peserta WikuFest]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="11f759f3-2117-46cc-9ec2-4e51c64cb18e" x="169" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6eb95552-e8e1-4d86-a3af-f67b531eb1f3" x="269" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="df63534b-c348-4994-86d9-88eb62925c91" x="69" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c0f92918-08f4-4952-9a7f-293cbce95e0a" x="370" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement uuid="0a6f260d-cef2-4004-83a2-4e4d5c4a4ddc" x="169" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c860a733-2fca-47c1-8d5b-b4dcbb6ac25e" x="69" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ab14121f-0013-433f-b46c-ddd57d1df57b" x="270" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="041aa736-a53d-409a-8995-6ae56f0f9de7" x="370" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="ApplicationEntityManager" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    
+		<class>com.anabatic.sandbox.model.Role</class>
+        <class>com.anabatic.sandbox.model.User</class>
+		<class>com.anabatic.sandbox.model.Lesson</class>
+		<class>com.anabatic.sandbox.model.Trainer</class>
+		<class>com.anabatic.sandbox.model.Section</class>
+		<class>com.anabatic.sandbox.model.Room</class>   		
+   		<class>com.anabatic.sandbox.model.Reservation</class>
+   		<class>com.anabatic.sandbox.model.Schedule</class>
+    </persistence-unit>
+    
+</persistence>

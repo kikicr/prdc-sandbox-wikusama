@@ -1,0 +1,33 @@
+.top-bar-less{
+	background-color: #d35400;
+    color: white;
+    text-align: right;
+    padding: 5px 0px;
+    
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+	
+}
+.top-bar,#login-has{
+	border-bottom:solid 5px #d35400;
+	
+	
+	
+}
+
+
+
+
+.logo{
+	min-width: 10%;
+	max-height:30px;
+	
+}
+
+.sidebar{
+	padding:5%;
+	background: #ececec;
+		
+}
